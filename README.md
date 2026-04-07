@@ -1,5 +1,5 @@
 # Stranger-things
-tranger Things — The Upside Down Messenger  A 3D interactive room where you can communicate with Will Byers through Christmas lights.
+stranger Things — The Upside Down Messenger  A 3D interactive room where you can communicate with Will Byers through Christmas lights.
  Preview
 A fully interactive 3D recreation of Joyce Byers' living room from Stranger Things — complete with floral wallpaper, Christmas lights, alphabet wall, and a synthesized Stranger Things score. Ask Will anything and watch the lights spell out his cryptic response.
 
@@ -75,11 +75,6 @@ Letters A–Z painted in Permanent Marker font, dark paint on floral wallpaper
 Each letter has its own Christmas bulb above it
 Bulbs: red, yellow, green, blue, orange, purple, cyan, pink
 
-Lighting Setup
-LightColorIntensityPurposeAmbientWarm orange #7a40181.4Base room fillLamp (floor lamp)#ff88333.2Left foreground warm glowCandle 1 & 2#ffaa442.3 / 1.8Table flickerWall Wash 1 & 2#ffdd994.5Back wall illuminationWall Wash 3 (center)#ffcc773.0Alphabet fillAlphabet bulbsPer-color0–3.0Letter-specific colored glow
-Upside Down Vines
-11 procedural 3D vine tubes using QuadraticBezierCurve3 + TubeGeometry, each hidden until RUNWILL is triggered, then revealed sequentially with 150ms stagger.
-
 ⚙️ Configuration
 All tweakable values are near the top of the <script> block:
 javascript// Spelling speed (ms per letter)
@@ -100,9 +95,7 @@ scene.fog = new THREE.FogExp2(0x180a02, 0.022);
 // Renderer exposure
 renderer.toneMappingExposure = 1.4;
 
-🌐 Browser Support
-BrowserStatusChrome 90+✅ Full supportFirefox 88+✅ Full supportSafari 15+✅ Full supportEdge 90+✅ Full support
-Requires: WebGL, Web Audio API, ES6+ — all supported in any modern browser.
+
 
 Note: Audio requires a user gesture (click or keypress) to start due to browser autoplay policies.
 
